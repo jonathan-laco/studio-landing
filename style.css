@@ -1,0 +1,160 @@
+body {
+    background-image: linear-gradient(to right, #2F11A9 50%, #4A0E80 50%);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+@font-face {
+    font-family: 'adlerypro';
+    src: url(Adlery-Pro-trial.ttf);
+}
+
+@font-face {
+    font-family: Croissant;
+    src: url(CroissantOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: halloween;
+    src: url(Halloween.otf);
+}
+
+.content {
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 30px;
+}
+
+.circle {
+    width: 98vmin;
+    height: 98vmin;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: conic-gradient(#2f11a9 50%, #4A0E80 50%);
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+    border: 40px solid rgb(137, 43, 226);
+}
+
+.navbar {
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    font-family: croissant;
+    font-size: 20px;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 1s, color 0.3s; 
+    background-color: transparent;
+}
+
+.nav-list a:hover {
+    background-color: #442aac8a; 
+    color: white;
+}
+
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+}
+
+.circle::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #1B1464;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    text-align: center;
+    z-index: 2;
+    margin-top: 35px;
+}
+
+h1 {
+    color: white;
+    font-size: 8vh;
+    font-family: adlerypro;
+}
+
+p {
+    font-size: 26px;
+    color: white;
+}
+
+b {
+    font-family: halloween;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+    background-color: #1B69B1;
+    color: white;
+}
+
+.bt {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.bt:hover {
+    background-color: #4A0E80;
+    border-color: #4A0E80;
+    transition: 1s;
+    color: white;
+}
+.logo {
+    left: 20px;
+    position: absolute;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
